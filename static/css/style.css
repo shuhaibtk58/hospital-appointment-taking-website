@@ -1,0 +1,9 @@
+li:hover {
+  background-color: rgb(220, 220, 220);
+  border-radius: 1rem;
+}
+
+.doc-image-setup {
+  width: 20%;
+  height: 20rem;
+}

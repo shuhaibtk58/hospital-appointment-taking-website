@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}About Us - City Hospital{% endblock title %}
+
+{% block content %}
+{% load static %}
+<div class="container mt-5">
+  <h1 class="text-center">About City Hospital</h1>
+  <hr>
+  <div class="row">
+    <div class="col-md-6 text-center mt-5">
+      <img src="{% static 'images/hospital_image.jpg' %}" alt="Hospital Image" class="img-fluid rounded" style="max-width: 100%;">
+    </div>
+    <div class="col-md-6 align-self-center">
+      <h2>Our Mission</h2>
+      <p>
+        At City Hospital, our mission is to provide the highest quality healthcare services to our community. We are dedicated to improving the health and well-being of our patients through compassionate care, cutting-edge technology, and a commitment to excellence.
+      </p>
+    </div>
+  </div>
+  
+  <div class="text-center mt-4">
+    <h2>Our Values</h2>
+    <p>
+      We uphold the values of integrity, compassion, innovation, and excellence in everything we do. These values guide our actions and decisions, ensuring that our patients receive the highest standard of care.
+    </p>
+  </div>
+
+  <div class="text-center mt-4">
+    <h2>Contact Us</h2>
+    <p>
+      If you have any questions or would like to learn more about City Hospital, please don't hesitate to <a href="/contact">contact us</a>. We are here to assist you.
+    </p>
+  </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block title %}City Hospital{% endblock title %}
+
+{% block content %}
+  {% load static %}
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static '/images/car1.jpg' %}" class="d-block w-100" alt="Hospital Exterior">
+        <div class="carousel-caption d-none d-md-block text-body">
+          <h2>Welcome to City Hospital</h2>
+          <p>Your Trusted Healthcare Partner</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '/images/car2.jpg' %}" class="d-block w-100" alt="Friendly Staff">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Our Dedicated Staff</h2>
+          <p>Committed to Your Well-being</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '/images/car3.jpg' %}" class="d-block w-100" alt="State-of-the-art Facilities">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Modern Facilities</h2>
+          <p>Ensuring Quality Care</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <section class="container my-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>About City Hospital</h3>
+        <p>
+          City Hospital is a leading healthcare provider dedicated to delivering high-quality medical services. We combine expertise, technology, and compassion to provide the best care for our patients.
+        </p>
+        <a href="/about" class="btn btn-primary">Learn More</a>
+      </div>
+      <div class="col-md-6">
+        <h3>Our Services</h3>
+        <ul>
+          <li>Emergency Care</li>
+          <li>Specialized Treatments</li>
+          <li>Diagnostic Services</li>
+          <li>Maternity & Pediatrics</li>
+          <li>And more...</li>
+        </ul>
+        <a href="/department" class="btn btn-primary">Explore Services</a>
+      </div>
+    </div>
+  </section>
+{% endblock content %}
